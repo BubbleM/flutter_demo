@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/child/image.dart';
+import 'package:flutter_app/child/list.dart';
 
 import 'child/text.dart';
 
@@ -32,7 +33,9 @@ class HomeContent extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Center(
-      child: ImageChild()
+      // child: TextChild()
+      // child: ImageChild()
+      child: ListChild(),
     );
   }
 }
