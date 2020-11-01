@@ -53,21 +53,28 @@ class ImageChild extends StatelessWidget {
       /**
        * 使用 ClipOval 组件实现圆形图片
        */
-      child: Container(
-        child: ClipOval(
-          child: Image.network(
-              'https://pic2.58cdn.com.cn/p1/big/n_v26d53fadb15e74fbea1f1659c00c3727e.jpg',
-              width: 300,
-              height: 300,
-              fit: BoxFit.cover
-          )
-        ),
-      ),
+      // child: Container(
+      //   child: ClipOval(
+      //     child: Image.network(
+      //         'https://pic2.58cdn.com.cn/p1/big/n_v26d53fadb15e74fbea1f1659c00c3727e.jpg',
+      //         width: 300,
+      //         height: 300,
+      //         fit: BoxFit.cover
+      //     )
+      //   ),
+      // ),
 
       /**
        * 使用本地图片
        */
-
+      child: Container(
+        child: Image.asset(
+            'images/search.png',
+            fit: BoxFit.cover,
+        ),
+        height: 300,
+        width: 300,
+      )
     );
   }
 }
