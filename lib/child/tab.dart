@@ -61,11 +61,12 @@ class Home extends StatelessWidget{
           RaisedButton(
             child: Text('跳转到设置页'),
             onPressed: (){
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context)=>SearchPage(title: '参数',)
-                )
-              );
+              // Navigator.of(context).push(
+              //   MaterialPageRoute(
+              //     builder: (context)=>SearchPage(title: '参数',)
+              //   )
+              // );
+              Navigator.pushNamed(context, '/search1');
             },
           )
         ],
