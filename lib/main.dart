@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/child/aspectRatio.dart';
+import 'package:flutter_app/child/card.dart';
 import 'package:flutter_app/child/grid.dart';
 import 'package:flutter_app/child/image.dart';
 import 'package:flutter_app/child/list.dart';
@@ -39,7 +41,9 @@ class HomeContent extends StatelessWidget {
       // child: ImageChild()
       // child: ListChild(),
       // child: GridChild(),
-      child: StackChild(),
+      // child: StackChild(),
+      // child: AspectRatioChild(),
+      child: CardChild(),
     );
   }
 }
