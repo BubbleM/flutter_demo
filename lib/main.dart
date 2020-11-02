@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/child/grid.dart';
 import 'package:flutter_app/child/image.dart';
 import 'package:flutter_app/child/list.dart';
+import 'package:flutter_app/child/stack.dart';
 
 import 'child/text.dart';
 
@@ -37,7 +38,8 @@ class HomeContent extends StatelessWidget {
       // child: TextChild()
       // child: ImageChild()
       // child: ListChild(),
-      child: GridChild(),
+      // child: GridChild(),
+      child: StackChild(),
     );
   }
 }
