@@ -7,6 +7,7 @@ import 'package:flutter_app/child/image.dart';
 import 'package:flutter_app/child/list.dart';
 import 'package:flutter_app/child/stack.dart';
 import 'package:flutter_app/child/state.dart';
+import 'package:flutter_app/child/tab.dart';
 import 'package:flutter_app/child/wrap.dart';
 
 import 'child/text.dart';
@@ -21,15 +22,16 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Demo'),
-        ),
-        body: HomeContent(),
-      ),
-      theme: ThemeData(
-        primarySwatch: Colors.yellow
-      ),
+      home: TabChild(),
+      // home: Scaffold(
+      //   appBar: AppBar(
+      //     title: Text('Flutter Demo'),
+      //   ),
+      //   body: HomeContent(),
+      // ),
+      // theme: ThemeData(
+      //   primarySwatch: Colors.yellow
+      // ),
     );
   }
 }
