@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/page/search.dart';
 
 import '../main.dart';
 
@@ -53,7 +54,23 @@ class Home extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Text('Home');
+    return Center(
+      child: Column(
+        children: <Widget>[
+          Text('Home'),
+          RaisedButton(
+            child: Text('跳转到设置页'),
+            onPressed: (){
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context)=>SearchPage(title: '参数',)
+                )
+              );
+            },
+          )
+        ],
+      ),
+    );
   }
 }
 class Category extends StatelessWidget{
